@@ -71,8 +71,34 @@ public class Aircraft : AircraftData , IAircraftData
         }
         return departure;
     }
-    
+
     public void GenerateRandomAircraftType()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GenerateRandomWTCType()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GenerateRandomFlightLevel()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GenerateRandomGateNumber()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GenerateRandomStatus()
+    {
+        throw new NotImplementedException();
+    }
+
+
+    /*public void GenerateRandomAircraftType()
     {
         
     }
@@ -90,11 +116,26 @@ public class Aircraft : AircraftData , IAircraftData
     public void GenerateRandomGateNumber()
     {
 
-    }
+    }*/
 
-    public void GenerateRandomStatus()
+    public EAricraftStatus GenerateRandomStatus(EAricraftStatus eAricraftStatus)
     {
-    
+        Random r = new Random();
+        int number = r.Next(1, 5); // Adjusted to match the number of cases
+
+        switch (number)
+        {
+            case 1:
+                return EAricraftStatus.ONFREQ;
+            case 2:
+                return EAricraftStatus.TAKEOFF;
+            case 3:
+                return EAricraftStatus.LINEUP;
+            case 4:
+                return EAricraftStatus.STARTUP;
+            default:
+                return EAricraftStatus.NONE;
+        }
     }
 
     public void ShowAllTaxiTags()
@@ -115,6 +156,6 @@ public class Aircraft : AircraftData , IAircraftData
     public override string ToString()
     {
         return
-            $"{GenerateRandomCompany(Company)}{GenerateRandomCallsignNumber(CallsginNumber)}{GenerateRandomCallsignLetter(CallsignLetter)}  {Departure = "LOWW"} {GenerateRandomArrival(Arrival)} {DepartureRoute = "SidTest"} {GenerateRandomDepartureRunway(DepartureRunway)} {AltitudeInitial = 5000} {AssignedSqawk = 1000} {AircraftType = "TypeTest"} {EwtcTypeE = EwtcType.M} {RequestedFlightLevel = 34000} {FlightPlanIsValid = true} {Gate = "GateTest"} {EAricraftStatusE = EAricraftStatus.NONE}";
+            $"{GenerateRandomCompany(Company)}{GenerateRandomCallsignNumber(CallsginNumber)}{GenerateRandomCallsignLetter(CallsignLetter)}  {Departure = "LOWW"} {GenerateRandomArrival(Arrival)} {DepartureRoute = "SidTest"} {GenerateRandomDepartureRunway(DepartureRunway)} {AltitudeInitial = 5000} {AssignedSqawk = 1000} {AircraftType = "TypeTest"} {EwtcTypeE = EwtcType.M} {RequestedFlightLevel = 34000} {FlightPlanIsValid = true} {Gate = "GateTest"} {GenerateRandomStatus(EAricraftStatusE)}";
     }
 }

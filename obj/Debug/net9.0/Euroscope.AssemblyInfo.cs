@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Euroscope")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+597dae3addc7994b4007c0b27ea9b6099d20206e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Euroscope")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Euroscope")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

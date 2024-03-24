@@ -12,3 +12,4 @@ C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\refint\Eurosco
 C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.pdb
 C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.genruntimeconfig.cache
 C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\ref\Euroscope.dll
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.sourcelink.json
