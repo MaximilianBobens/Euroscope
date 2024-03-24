@@ -1,0 +1,14 @@
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\bin\Debug\net9.0\Euroscope.exe
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\bin\Debug\net9.0\Euroscope.deps.json
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\bin\Debug\net9.0\Euroscope.runtimeconfig.json
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\bin\Debug\net9.0\Euroscope.dll
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\bin\Debug\net9.0\Euroscope.pdb
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.AssemblyInfoInputs.cache
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.AssemblyInfo.cs
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.csproj.CoreCompileInputs.cache
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.dll
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\refint\Euroscope.dll
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.pdb
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\Euroscope.genruntimeconfig.cache
+C:\Users\maxim\RiderProjects\Euroscope\Euroscope\obj\Debug\net9.0\ref\Euroscope.dll
