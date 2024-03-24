@@ -1,4 +1,6 @@
-﻿namespace Euroscope;
+﻿using System.Net;
+
+namespace Euroscope;
 
 public class Aircraft : AircraftData , IAircraftData
 {
@@ -77,14 +79,39 @@ public class Aircraft : AircraftData , IAircraftData
         throw new NotImplementedException();
     }
 
-    public void GenerateRandomWTCType()
+   
+
+    public EwtcType GenerateRandomWTCType(EwtcType ewtcType)
     {
-        throw new NotImplementedException();
+        Random r = new Random();
+        int amount = r.Next(1, 3);
+        switch (amount)
+        {
+            case 1: return EwtcType.H;
+            break;
+            case 2: return EwtcType.L;
+            break;
+            case 3: return EwtcType.M;
+            break;
+        }
+        return ewtcType;
     }
 
-    public void GenerateRandomFlightLevel()
+    public int GenerateRandomFlightLevel(int level)
     {
-        throw new NotImplementedException();
+        Random r = new Random();
+        int[] levels = new[]
+        {
+            20000, 21000, 22000, 23000, 24000, 
+            25000, 26000, 27000, 28000, 29000, 
+            30000, 31000, 32000, 33000, 34000,
+            35000, 36000, 37000, 38000, 39000
+        };
+        for (int i = 0; i < levels.Length; i++)
+        {
+            int randomLevel = levels[r.Next(levels.Length)];
+        }
+        return level;
     }
 
     public void GenerateRandomGateNumber()
@@ -156,6 +183,6 @@ public class Aircraft : AircraftData , IAircraftData
     public override string ToString()
     {
         return
-            $"{GenerateRandomCompany(Company)}{GenerateRandomCallsignNumber(CallsginNumber)}{GenerateRandomCallsignLetter(CallsignLetter)}  {Departure = "LOWW"} {GenerateRandomArrival(Arrival)} {DepartureRoute = "SidTest"} {GenerateRandomDepartureRunway(DepartureRunway)} {AltitudeInitial = 5000} {AssignedSqawk = 1000} {AircraftType = "TypeTest"} {EwtcTypeE = EwtcType.M} {RequestedFlightLevel = 34000} {FlightPlanIsValid = true} {Gate = "GateTest"} {GenerateRandomStatus(EAricraftStatusE)}";
+            $"{GenerateRandomCompany(Company)}{GenerateRandomCallsignNumber(CallsginNumber)}{GenerateRandomCallsignLetter(CallsignLetter)}  {Departure = "LOWW"} {GenerateRandomArrival(Arrival)} {DepartureRoute = "SidTest"} {GenerateRandomDepartureRunway(DepartureRunway)} {AltitudeInitial = 5000} {AssignedSqawk = 1000} {AircraftType = "TypeTest"} {GenerateRandomWTCType(EwtcTypeE)} {GenerateRandomFlightLevel(RequestedFlightLevel)} {FlightPlanIsValid = true} {Gate = "GateTest"} {GenerateRandomStatus(EAricraftStatusE)}";
     }
 }

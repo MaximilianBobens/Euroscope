@@ -9,9 +9,9 @@ public interface IAircraftData
     string GenerateRandomDepartureRunway(string deparutre);
     
     void GenerateRandomAircraftType();
-    void GenerateRandomWTCType();
+    EwtcType GenerateRandomWTCType(EwtcType ewtcType);
 
-    void GenerateRandomFlightLevel();
+    int GenerateRandomFlightLevel(int level);
     void GenerateRandomGateNumber();
     void GenerateRandomStatus();
     
